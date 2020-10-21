@@ -1,4 +1,4 @@
-image: gclayburg/rungroovygitpod:0.2.1
+image: gclayburg/rungroovygitpod:0.2.2
 tasks:
   - command: "export JAVA_OPTS='-Xmx1024m -XX:TieredStopAtLevel=1 -noverify -Dupbanner.show-env=true -Dlogging.level.com.garyclayburg.rungroovy=DEBUG -verbose:gc' && export GROOVYSCRIPT_HOME=$(pwd)/src/main/groovy && /home/gitpod/springboot/bootrunner.sh --server.port=8080 "
 ports:
