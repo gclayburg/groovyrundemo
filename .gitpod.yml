@@ -1,6 +1,6 @@
-image: gclayburg/rungroovygitpod:0.2.2
+image: gclayburg/rungroovygitpod:0.2.3
 tasks:
-  - command: "export JAVA_OPTS='-Xmx1024m -XX:TieredStopAtLevel=1 -noverify -Dupbanner.show-env=true -Dlogging.level.com.garyclayburg.rungroovy=DEBUG -verbose:gc' && /home/gitpod/springboot/bootrunner.sh --server.port=8080 "
+  - command: "export JAVA_OPTS='-Xmx1024m -XX:TieredStopAtLevel=1 -noverify -Dupbanner.show-env=true -Dlogging.level.com.garyclayburg.rungroovy=DEBUG' && /home/gitpod/springboot/bootrunner.sh --server.port=8080 "
 ports:
   - port: 8080
     onOpen: open-preview
